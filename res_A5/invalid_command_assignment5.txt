@@ -1,0 +1,88 @@
+create calendar
+create calendar --name
+create calendar --name MyCalendar
+create calendar --name MyCalendar --timezone
+create calendar --name MyCalendar --timezone America
+create calendar --name MyCalendar --timezone America/New_York this is an extra string
+create calendar this is extra string --name MyCalendar --timezone America/New_York
+create calendar --name MyCalendar --timezone india/mumbai
+create calendar --name --timezone America/New_York
+create calendar --name MyCalendar America/New_York
+create calendar --name MyCalendar --timezone this is America/New_York
+
+use calendar
+use calendar --name
+use calendar --name MyCalendar extraText
+use calendar --name NonExistentCalendar
+use calendar --nameMyCalendar
+use calendars --name MyCalendar
+
+
+edit calendar my home --property timezone Europe/London
+edit calendar --name my home  name My Home
+
+
+create event Conference1  2025-04-29T10:00 to 2025-04-29T12:59
+create event Conference2 from 2025-04-29T13:00  2025-04-29T13:59
+create  Conference3 from 2025-04-29T14:00 to 2025-04-29T19:59
+
+print events  2025-04-29
+
+edit event  Conference1 from 2025-04-29T10:00 to 2025-04-29T12:59 with 2025-04-29T10:30
+ 
+edit event end Conference1 from 2025-04-29T10:30 to 2025-04-29T12:59 with 2025-04-22
+ 
+edit event subject  from 2025-04-29T10:30 to 2025-04-29T12:00  Tech Conference
+
+print events on 2025/04/29
+
+create event Workshop from 2025-03-03T13:00 to 2025-03-03T15:00 repeats  for 3 times
+create events Workshop  from 2025-03-05T13:00 to 2025-03-05T15:00
+print events from 2025-03-03T00:00 
+
+edit events subject Workshop from 2025-03-03T13:00  Updated Workshop
+
+print events from 2025-03-03
+
+create event PDmeet from 2022-03-03T13:00 to 2022-03-03T15:00 repeats M for 3 
+create event PDmeet  from 2023-03-05T13:00 
+print event from 2022-03-03T00:00 to 2022-03-24T23:59
+print event on 2023-03-05
+
+edit events subject PDmeet PDATProj
+
+
+show status on 2022-03-07
+show status 2022-03-07T13:00
+create calendar  Home --timezone America/New_York
+create calendar --name Work --timezone Australia/London
+uses calendar --name Home
+
+
+print all events from 2025-03-03T00:00 to 2025-03-24T13:00
+
+copy events 2025-03-03 and 2025-03-07 --target Work to 2025-03-03
+use calendar --name 
+print events from  to 2025-03-24T13:00
+use calendar 
+copy events between 2025-03-03  2025-03-07 --target Home to 2025-05-13
+print  from 2025-05-13T00:00 to 2025-05-16T23:00
+copy events between 2025-03-03 and 2025-03-07 --target  to 2025-05-13 
+use calendar -name Work
+
+create event Conference1 from 2025-04-29T10:00 
+create event Conference2 from 2025-04-29T13:00 to 
+create event Conference3 from 2025-04-29T14:00 to 2025-04-29
+print events at 2025-04-29
+
+copy events on 2025-04-29 --target Work to 
+
+copy events on 2025-04-29 --target Work to 2025-05-29T08:99
+
+copy events --target Home to 2025-05-29
+print events 
+
+
+ex
+
+exit

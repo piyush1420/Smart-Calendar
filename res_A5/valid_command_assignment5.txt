@@ -1,0 +1,89 @@
+
+create calendar --name home --timezone America/New_York
+create calendar --name work --timezone Europe/London
+create calendar --name my home --timezone Asia/Kolkata
+use calendar --name home
+edit calendar --name my home --property timezone Europe/London
+edit calendar --name my home --property name My Home
+use calendar --name My Home
+use calendar --name home
+create event Conference1 from 2025-04-29T10:00 to 2025-04-29T12:59
+create event Conference2 from 2025-04-29T13:00 to 2025-04-29T13:59
+create event Conference3 from 2025-04-29T14:00 to 2025-04-29T19:59
+print events on 2025-04-29
+edit event start Conference1 from 2025-04-29T10:00 to 2025-04-29T12:59 with 2025-04-29T10:30
+edit event end Conference1 from 2025-04-29T10:30 to 2025-04-29T12:59 with 2025-04-29T12:00
+edit event subject Conference1 from 2025-04-29T10:30 to 2025-04-29T12:00 with Tech Conference
+print events on 2025-04-29
+create event Workshop from 2025-03-03T13:00 to 2025-03-03T15:00 repeats M for 3 times
+create event Workshop  from 2025-03-05T13:00 to 2025-03-05T15:00
+print events from 2025-03-03T00:00 to 2025-03-24T23:59
+edit events subject Workshop from 2025-03-03T13:00 with Updated Workshop
+print events from 2025-03-03T00:00 to 2025-03-24T23:59
+create event PDmeet from 2022-03-03T13:00 to 2022-03-03T15:00 repeats M for 3 times
+create event PDmeet  from 2023-03-05T13:00 to 2023-03-05T15:00
+print events from 2022-03-03T00:00 to 2022-03-24T23:59
+print events on 2023-03-05
+edit events subject PDmeet `PDATProj`
+print events from 2022-03-03T00:00 to 2022-03-24T23:59
+print events on 2023-03-05
+show status on 2022-03-07T00:00
+show status on 2022-03-07T13:00
+create calendar --name Home --timezone America/New_York
+create calendar --name Work --timezone Europe/London
+use calendar --name Home
+create event Workshop from 2025-03-03T13:00 to 2025-03-03T15:00 repeats M for 3 times
+create event Workshop 1 from 2025-03-05T13:00 to 2025-03-05T15:00
+create event Workshop 2 from 2025-03-06T13:00 to 2025-03-06T15:00
+print events from 2025-03-03T00:00 to 2025-03-24T13:00
+use calendar --name Work
+print events from 2025-03-03T00:00 to 2025-03-24T13:00
+use calendar --name Home 
+copy events between 2025-03-03 and 2025-03-07 --target Work to 2025-03-03
+use calendar --name Work
+print events from 2025-03-03T00:00 to 2025-03-24T13:00
+use calendar --name Home
+copy events between 2025-03-03 and 2025-03-07 --target Home to 2025-05-13
+print events from 2025-05-13T00:00 to 2025-05-16T23:00
+copy events between 2025-03-03 and 2025-03-07 --target Work to 2025-05-13 
+use calendar --name Work
+print events from 2025-05-13T00:00 to 2025-05-16T23:00
+use calendar --name Home
+create event Conference1 from 2025-04-29T10:00 to 2025-04-29T12:59
+create event Conference2 from 2025-04-29T13:00 to 2025-04-29T13:59
+create event Conference3 from 2025-04-29T14:00 to 2025-04-29T19:59
+print events on 2025-04-29
+copy events on 2025-04-29 --target Work to 2025-04-29
+use calendar --name Work
+print events on 2025-04-29
+use calendar --name Home
+copy events on 2025-04-29 --target Work to 2025-05-29
+use calendar --name Work
+print events on 2025-05-29
+use calendar --name Home
+copy events on 2025-04-29 --target Home to 2025-05-29
+print events on 2025-05-29
+use calendar --name Home
+create event Class 1 from 2025-08-29T10:00 to 2025-08-29T12:59
+print events on 2025-08-29
+copy event Class 1 on 2025-08-29T10:00 --target Work to 2025-08-29T10:00
+use calendar --name Work
+print events on 2025-08-29
+use calendar --name Home
+copy event Class 1 on 2025-08-29T10:00 --target Work to 2025-09-12T12:00
+use calendar --name Work
+print events on 2025-09-12
+use calendar --name Home
+copy event Class 1 on 2025-08-29T10:00 --target Home to 2025-09-12T12:00
+print events on 2025-09-12
+create calendar --name Zone Change --timezone America/New_York
+use calendar --name Zone Change
+create event Class 1 from 2025-08-29T10:00 to 2025-08-29T12:59
+print events on 2025-08-29
+edit calendar --name Zone Change --property timezone Europe/London
+print events on 2025-08-29
+edit calendar --name Zone Change --property name xyz
+use calendar --name xyz
+print events on 2025-08-29
+export cal events.csv
+exit

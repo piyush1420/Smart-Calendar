@@ -1,0 +1,22 @@
+[
+  {
+    "queryId": "morning team meeting",
+    "queryText": "morning team meeting",
+    "relevantIds": ["Weekly engineering standup@2025-04-07T09:30"]
+  },
+  {
+    "queryId": "social with coworkers",
+    "queryText": "social with coworkers",
+    "relevantIds": ["Team happy hour@2025-04-11T17:30"]
+  },
+  {
+    "queryId": "doctor visit",
+    "queryText": "doctor visit",
+    "relevantIds": ["Dentist appointment@2025-04-11T08:00"]
+  },
+  {
+    "queryId": "fitness",
+    "queryText": "fitness",
+    "relevantIds": ["Yoga class@2025-04-12T07:00"]
+  }
+]

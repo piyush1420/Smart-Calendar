@@ -1,0 +1,27 @@
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled class files
+*.class
+
+# Build folders
+out/
+target/
+bin/
+
+# Other common files
+.classpath
+.project
+.settings/
+*.log
+
+# macOS files
+.DS_Store
+
+# Node / React (frontend)
+/node_modules/
+/build/
+.env

@@ -1,0 +1,20 @@
+create event --autoDecline Meeting from 2023-10-15  to 2023-10-15 15:00
+create event  Team Meeting from 2023-10-15 14:00  2023-10-15 15:00
+create event --autoDecline Meeting from 2025-10-15 12:00 to 2025-10-15 15:00 repeats  for 5 times
+create event  Meeting from 2025-10-15 12:00 to 2025-10-15 15:00 repeats MT for  times
+create event --autoDecline Meet from 2025-10-1 12:00 to 2025-10-1 15:00 repeats MT until 2025-10-15
+create event  Meet from 2025-10-1 12:00 to 2025-10-1  repeats MT until 2025-10-15 15:00
+create event --autoDecline on 2025-10-1 12:00
+create Meet on 2025-10-1 12:00
+create event --autoDecline Meet on 2025-10-1  MT for 5 times
+create event  Meet on 2025-10-1 repeats MT  5 times
+create event --autoDecline Meet on 2025-10-1  until 2025-10-15
+create event  Meet on 2025-10-1 repeats MT until
+edit event subject Recurring Meeting from 2025-03-10T10:00 to 2025-03-10T11:00 with Updated Meeting
+edit events location Recurring Meeting from 2025-03-10T10:00 with Room 202
+edit events subject Recurring Meeting `Updated Meeting`
+print events on 2025-10-1 10:00
+print events from 2023-10-1 to 2023-10-1
+export  test.csv
+show status on 2023-10-01
+exit

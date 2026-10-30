@@ -1,0 +1,19 @@
+Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private
+"e-normal-timed-event",04/01/2025,09:00 AM,04/01/2025,10:00 AM,False,,,False
+"e-allDay",04/02/2025,12:00 AM,04/02/2025,11:59 PM,True,,,False
+"e-rec-occurances",04/04/2025,09:00 AM,04/04/2025,10:00 AM,False,,,False
+"e-rec-until-date",04/05/2025,09:00 AM,04/05/2025,10:00 AM,False,,,False
+"e-rec-allDay-occurances",04/06/2025,12:00 AM,04/06/2025,11:59 PM,True,,,False
+"e-rec-allDay-occurances",04/07/2025,12:00 AM,04/07/2025,11:59 PM,True,,,False
+"e-rec-occurances",04/11/2025,09:00 AM,04/11/2025,10:00 AM,False,,,False
+"e-rec-until-date",04/12/2025,09:00 AM,04/12/2025,10:00 AM,False,,,False
+"e-rec-allDay-occurances",04/13/2025,12:00 AM,04/13/2025,11:59 PM,True,,,False
+"e-rec-allDay-occurances",04/14/2025,12:00 AM,04/14/2025,11:59 PM,True,,,False
+"e-rec-occurances",04/18/2025,09:00 AM,04/18/2025,10:00 AM,False,,,False
+"e-rec-until-date",04/19/2025,09:00 AM,04/19/2025,10:00 AM,False,,,False
+"e-rec-allDay-until",04/20/2025,12:00 AM,04/20/2025,11:59 PM,True,,,False
+"e-rec-allDay-until",04/21/2025,12:00 AM,04/21/2025,11:59 PM,True,,,False
+"e-rec-occurances",04/25/2025,09:00 AM,04/25/2025,10:00 AM,False,,,False
+"e-rec-until-date",04/26/2025,09:00 AM,04/26/2025,10:00 AM,False,,,False
+"e-rec-allDay-until",04/27/2025,12:00 AM,04/27/2025,11:59 PM,True,,,False
+"e-rec-allDay-until",04/28/2025,12:00 AM,04/28/2025,11:59 PM,True,,,False
